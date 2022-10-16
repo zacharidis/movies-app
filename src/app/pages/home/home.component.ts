@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.moviesService.getMovies().subscribe((response: any)=>{
 
+        // get the data from the api 
         this.movies = response.results;
         console.log(response);
 

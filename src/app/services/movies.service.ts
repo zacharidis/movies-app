@@ -11,6 +11,7 @@ export class MoviesService {
 
   getMovies() {
 
+    //return the json api response 
    return this.http.get('https://api.themoviedb.org/3/movie/popular?api_key=a27d01652ca7eaf683996431e6c28360')
 
   }
